@@ -17,9 +17,11 @@ git clone (본인의 리포지토리 주소)
 2. clone된 블로그 파일을 수정 했다면 리포지토리아 push하여 반영한다  / post 글 수정시 "2."를 "1."로 인식하는 문제가 있어 나중에 확인해야함
    push는 업로드 + 커밋 과정이 함께다? 줄바꾸기도 확인 필요.....
 {% highlight ruby %}
+git add --all
 git commit -m "할말"
 git push origin main
 {% endhighlight %}
+로컬 공간에서 clone 된 파일을 직접 삭제한 경우 git add --all을 해야지만 commit 및 push가 가능해지는것 같음
 정확한 이유는 확인하지 못했지만 commit후 push를 해야 리포지토리에 정상 반영된다.
 
 3. 지킬 한글 튜토리얼 주소

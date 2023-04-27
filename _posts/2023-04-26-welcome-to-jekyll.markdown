@@ -15,10 +15,10 @@ git clone (본인의 리포지토리 주소)
 {% endhighlight %}
 
 2. clone된 블로그 파일을 수정 했다면 리포지토리아 push하여 반영한다  / post 글 수정시 "2."를 "1."로 인식하는 문제가 있어 나중에 확인해야함
-   push는 업로드 + 커밋 과정이 함께다?
+   push는 업로드 + 커밋 과정이 함께다? 줄바꾸기도 확인 필요.....
 {% highlight ruby %}
-git add --all
 git commit -m "할말"
+git push origin main
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

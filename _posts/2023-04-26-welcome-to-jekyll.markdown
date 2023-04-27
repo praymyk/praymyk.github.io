@@ -20,8 +20,13 @@ git clone (본인의 리포지토리 주소)
 git commit -m "할말"
 git push origin main
 {% endhighlight %}
+정확한 이유는 확인하지 못했지만 commit후 push를 해야 리포지토리에 정상 반영된다.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+3. 지킬 한글 튜토리얼 주소
+{% highlight ruby %}
+http://jekyllrb-ko.github.io/
+{% endhighlight %}
+ 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

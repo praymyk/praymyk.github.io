@@ -1,25 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "깃 블로그 생성방법"
 date:   2023-04-26 19:38:57 +0900
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+깃 블로그는 블로그 설정 파일을 깃 홈페이지 내 repositories 공간에 업로드하여 관리하는 것으로 이해
+로컬 PC에 리포지토리에 존재하는 블로그 구성 원본을 복제(Clone) 하여 수정한뒤 업로드(Push)를 반복하는 것으로 관리함
+리포지토리에 블로그를 생성한 상태에서 간략한 관리 순서는 아래와 같음
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
+1. 터미널(Git bash)을 로컬 PC내 원하는 공간에서 실행하여 깃 리포지토리 블로그 파일을 복제한다
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+git clone https://github.com/praymyk/praymyk.github.io.git
+git clone (본인의 리포지토리 주소)
+{% endhighlight %}
+
+2. clone된 블로그 파일을 수정 했다면 리포지토리아 push하여 반영한다  / post 글 수정시 "2."를 "1."로 인식하는 문제가 있어 나중에 확인해야함
+   push는 업로드 + 커밋 과정이 함께다?
+{% highlight ruby %}
+git add --all
+git commit -m "할말"
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

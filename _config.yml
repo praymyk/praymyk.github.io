@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 뀹의 개발도전
+title: 개발 공부
 email: praymyk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   23년 4월 힘든 여정이 시작됐습니다. 깃허브 블로그 개설을 시작으로 여러가지 개발관련 내용을 메모하거나 시행착오를 기록해 보겠습니다.

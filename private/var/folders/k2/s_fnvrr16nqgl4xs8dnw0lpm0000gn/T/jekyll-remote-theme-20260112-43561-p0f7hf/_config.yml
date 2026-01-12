@@ -6,40 +6,38 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: 정 윤석
+name: Your Name
 title: Your job title
-email: praymyk@gmail.com
+email: Your email (optional)
 # email_title: Email (Email title override)
-phone: 010-4795-0025
+phone: Your phone number (optional)
 # phone_title: Phone (Phone title override)
-# website: Your website (eg. https://google.com)(optional)
+website: Your website (eg. https://google.com)(optional)
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-# twitter_username: jekyllrb
-github_username:  praymyk
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jekyll
-# linkedin_username: jekyll
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
-# orcid_username: 0000-0000-0000-0000
-# googlescholar_username: D847cGsAAAAJ
+twitter_username: jekyllrb
+github_username:  jekyll
+stackoverflow_username: "00000001"
+dribbble_username: jekyll
+facebook_username: jekyll
+flickr_username: jekyll
+instagram_username: jekyll
+linkedin_username: jekyll
+xing_username: jekyll
+pinterest_username: jekyll
+youtube_username: jekyll
+orcid_username: 0000-0000-0000-0000
+googlescholar_username: D847cGsAAAAJ
 
 # Additional icon links
-
-# additional_links:
-# - title: Link name
-#  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#  url: Link url (eg. https://google.com)
-
+additional_links:
+- title: Link name
+  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+  url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -54,11 +52,13 @@ github_username:  praymyk
 # about_title: About Me (Use this to override about section title)
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Java & Spring, Thymeleaf, JavaScript를 기반으로 Asterisk/WebRTC 기반 CTI 프로젝트에서 약 1년 2개월간 풀스택 개발을 해왔습니다. 
-  상담원 약 200명이 사용하는 콜 시스템에서 콜 이력 작성·저장, 회원 관리 등 핵심 기능을 개발했고, 기존 JSP/센차(Sencha) 기반 시스템의 유지보수도 병행하며 서비스 안정화 경험을 쌓았습니다.
-  개발 업무에만 국한되지 않고 서비스 운영에 도움이 되는 개발자가 되고자, Gabia Cloud 기반(IDC / Rocky Linux 8.10) 인프라 운영을 보조하며 장애 대응과 운영 이슈에도 능동적으로 참여해왔습니다.
-  사용자 관점에서의 기능 구현을 중요하게 생각해, 개발 과정에서 다양한 예외 케이스와 운영 상황을 고려해 안정적으로 동작하는 서비스를 만드는 데 집중합니다. 
-  현재는 운영 중인 CTI 서비스의 신규 기능 추가/개선 및 유지보수를 주 업무로 수행하고 있습니다.
+  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+
+  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
+    - Lists
+    - Tables
+    - <a href="google.com">Links</a>
+    - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
 content:
   - title: Projects # Title for the section
@@ -117,14 +117,14 @@ footer_show_references: true
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-remote_theme: sproogen/modern-resume-theme
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
- - jekyll-remote-theme
+ - jekyll-seo-tag
 
 exclude : [
   "Gemfile",

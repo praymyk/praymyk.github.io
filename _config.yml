@@ -1,5 +1,5 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+repository: praymyk/praymyk.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
@@ -54,33 +54,43 @@ github_username:  praymyk
 # about_title: About Me (Use this to override about section title)
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Java & Spring, Thymeleaf, JavaScript를 기반으로 Asterisk/WebRTC 기반 CTI 프로젝트에서 약 1년 2개월간 풀스택 개발을 해왔습니다. 
-  상담원 약 200명이 사용하는 콜 시스템에서 콜 이력 작성·저장, 회원 관리 등 핵심 기능을 개발했고, 기존 JSP/센차(Sencha) 기반 시스템의 유지보수도 병행하며 서비스 안정화 경험을 쌓았습니다.
-  개발 업무에만 국한되지 않고 서비스 운영에 도움이 되는 개발자가 되고자, Gabia Cloud 기반(IDC / Rocky Linux 8.10) 인프라 운영을 보조하며 장애 대응과 운영 이슈에도 능동적으로 참여해왔습니다.
-  사용자 관점에서의 기능 구현을 중요하게 생각해, 개발 과정에서 다양한 예외 케이스와 운영 상황을 고려해 안정적으로 동작하는 서비스를 만드는 데 집중합니다. 
-  현재는 운영 중인 CTI 서비스의 신규 기능 추가/개선 및 유지보수를 주 업무로 수행하고 있습니다.
+  Java & Spring, Thymeleaf, JavaScript 기반으로 Asterisk/WebRTC CTI 프로젝트에서 약 2년간 풀스택 개발을 했습니다.
+
+  상담원 약 200명이 사용하는 콜 시스템에서 이력 작성·저장, 회원 관리 등 핵심 기능을 개발했고, 기존 JSP/센차(Sencha) 기반 시스템 유지보수도 병행했습니다.
+
+  Gabia Cloud(IDC / Rocky Linux 8.10) 인프라 운영을 보조하며 장애 대응과 이슈 처리에도 참여해 서비스 안정화 경험을 쌓았습니다.
+
+  운영 환경의 예외 케이스까지 고려해 사용자 관점에서 안정적으로 동작하는 기능 구현을 지향합니다.
+
+  현재는 운영 중인 CTI 서비스의 신규 기능 개발과 개선, 유지보수를 담당하고 있습니다.
 
 content:
-  - title: Projects # Title for the section
+  - title: Projects  # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        title: METAS&C 신규 CTI 개발
+#        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+#        link_text: Link Text
+#        additional_links:
+#          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+#            icon: fab fa-github
+#            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: >
-          Short overview of the project (optional)
+          Asterisk ARI(WebSocket) 기반 WebRTC CTI로 전환하여 브라우저에서 통화·고객 업무를 통합
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          Java/Spring Boot 기반으로 WebRTC 브라우저 CTI 콜 시스템을 개발했습니다.
+          기존 IP Phone(SIP) 중심의 Asterisk 연동을 Asterisk ARI(Application Realtime Interface) 이벤트 기반으로 전환하여,
+          WebSocket으로 실시간 통화 수신/제어 및 상태 이벤트를 처리했습니다.
+
+          프론트엔드는 싱글페이지(SPA) 형태로 첫 화면을 유지한 채 내부 콘텐츠를 동적으로 교체하는 구조를 구현했고,
+          화면의 정보 구조(IA) 설계와 레이아웃/컴포넌트 구성(UI)을 담당했습니다.
+          상담원 화면에서 콜 모니터링, 고객 조회, 통화 이력 작성·저장, 예약/콜백 접수 등 운영 핵심 기능을 일원화했습니다.
+
+          또한 사용자/고객/상담이력/예약 도메인의 DB 스키마 및 핵심 비즈니스 로직을 설계·구현하여
+          실시간 통화 상태에서의 안정적인 서비스 동작을 지원했습니다.
   - title: Experience
     layout: list
     content:

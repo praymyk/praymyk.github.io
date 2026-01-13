@@ -70,6 +70,7 @@ content:
     content:
       - layout: left
         title: METAS&C CTI 개발
+        sub_title: Spring Boot · MariaDB · Thymeleaf (Asterisk ARI/WebSocket)
         quote: >
           Asterisk ARI(WebSocket) 기반 WebRTC CTI로 전환하여 브라우저에서 통화·고객 업무를 통합
         description: |
@@ -79,7 +80,7 @@ content:
           싱글페이지(SPA) 형태의 동적 화면 전환 구조와 IA/UI 구성, 주요 도메인 DB 설계 및 핵심 로직 구현을 담당했습니다.
 
       - layout: left
-        title: MBTI 기반 소개팅 사이트 (수행과제)
+        title: MBTI 기반 소개팅 서비스
         sub_title: Spring Legacy · OracleDB · JSP
         caption: 2023.11 ~ 2023.12
         quote: >
@@ -131,29 +132,36 @@ content:
   - title: Key Contributions
     layout: list
     content:
-      - layout: left
+      - layout: top-left
         title: 업무 경험
         sub_title: Full-stack (Spring Boot / Thymeleaf / JavaScript / WebSocket / MariaDB / Asterisk ARI)
         caption: 2024.06 - Present
         quote: >
           CTI 시스템 개발 및 유지 보수 업무 내 주요 경험
         description: |
-          - 상담원 화면 프론트 기능 기획: 통화상태 → 고객정보 → 이력작성 → 콜백/예약을 끊김 없이 처리하도록 탭/패널 구성, 메뉴 구조 및 권한별 노출 정책, 화면 이동 동선/로직 설계
-          - Spring Boot + Thymeleaf 환경에서 “세션 유지형” 응대 페이지 구현: 콜 세션을 유지한 채 내부 콘텐츠를 동적 교체하여 사실상 SPA처럼 동작하도록 구성(페이지 이동 시에도 통화 컨텍스트 유지)
-          - 공통 CSS 토큰(변수) 기반 스타일 체계화: 반복 스타일을 변수/공통 컴포넌트로 정리해 유지보수 비용 절감 및 화면 일관성 강화
-          - JavaScript 기반 동적 UI 구현: 카테고리 종속 선택(상/하위 연동), 예약/통계 차트, IVR 트리 시각화 등 운영 기능의 인터랙션 구현
-          - 콜 현황 모니터링 WebSocket 구현: 콜로그/상담원 상태 정보를 객체로 구성해 인메모리로 관리하고, 구독 방식으로 화면에 실시간 반영
-          - DB 기본 성능 최적화: slow_query_log 기반으로 1초 단위로 누적되던 지연 쿼리를 추적해 주요 컬럼 인덱스 보강 및 응답 지연 완화
-          - Asterisk ARI 콜 연결 지연 개선: 콜 이벤트 처리 중 “콜 정보 저장”이 동기 처리로 지연을 유발하던 구간을 비동기 처리로 전환하여 최대 5초 수준의 체감 지연 개선
-          - DB 경량화 자동화(프로시저/이벤트 스케줄러): 로그성 대용량 테이블을 대상으로 “백업 → 정리(삭제)”를 배치로 자동 수행하여 운영 DB 부하를 낮추고 데이터 관리 주기를 체계화
-          - 수동 배포/운영: 빌드 산출물 배포, 설정 반영, 서비스 재기동/검증까지 수동 배포 절차로 운영 지원
+          **Frontend**
+          - 상담원 화면 기능 기획: 통화상태 → 고객정보 → 이력작성 → 콜백/예약 흐름을 끊김 없이 처리하도록 탭/패널 구성, 메뉴 구조 및 권한별 노출 정책, 화면 이동 동선/로직 설계
+          - 세션 유지형 응대 페이지(SPA 유사): Spring Boot + Thymeleaf 환경에서 콜 세션을 유지한 채 내부 콘텐츠를 동적 교체(페이지 이동 시에도 통화 컨텍스트 유지)
+          - CSS 토큰/변수 기반 스타일 체계화: 반복 스타일을 변수/공통화해 화면 일관성 강화 및 유지보수 비용 절감
+          - JavaScript 기반 동적 UI: 카테고리 종속 선택(상/하위 연동), 예약/통계 차트, IVR 트리 시각화 등 운영 기능 인터랙션 구현
+        
+          **Backend**
+          - 콜 현황 모니터링 WebSocket: 콜로그/상담원 상태 정보를 인메모리로 관리하고, 구독 방식으로 실시간 화면 반영
+          - Asterisk ARI 지연 개선: 콜 이벤트 처리 중 “콜 정보 저장” 동기 구간을 스레드풀 기반 비동기 처리로 전환하여 최대 5초 수준 체감 지연 개선
+        
+          **DB**
+          - slow_query_log 기반 성능 개선: 지연 쿼리 추적 후 주요 컬럼 인덱스 보강 및 응답 지연 완화
+          - DB 경량화 자동화: 로그성 대용량 테이블에 대해 “백업 → 정리(삭제)” 프로시저/이벤트 스케줄러로 배치 자동화
+        
+          **Operations**
+          - 수동 배포/운영 지원: 빌드 산출물 배포, 설정 반영, 서비스 재기동/검증까지 운영 절차 수행
 
   - title: Education
     layout: list
     content:
-      - layout: top-right
+      - layout: top-left
         title: KH정보교육원
-        sub_title: 웹 개발자 훈련 과정(Java/Spring)
+        sub_title: 웹 개발자 훈련 과정(Java/Spring/React)
         caption: 2023.07 - 2023.12
         quote: >
           Java 기반 웹 개발 과정 수료 및 팀 프로젝트 수행

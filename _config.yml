@@ -52,7 +52,7 @@ github_username:  praymyk
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
   Java & Spring, Thymeleaf, JavaScript 기반으로 **Asterisk/WebRTC CTI 도메인**에서 웹 서비스를 풀스택으로 개발·운영해왔습니다.
 
@@ -80,7 +80,7 @@ content:
           사내 CTI/CRM 웹 시스템 신규 개발 및 운영
         description: |
           - 신규 CTI/CRM 웹 시스템 구축 및 운영
-          - JSP/Thymeleaf + JavaScript(jQuery/Ajax) 기반 동적 UI 구현 및 화면 흐름 설계
+          - Thymeleaf + JavaScript(jQuery/Ajax) 기반 동적 UI 구현 및 화면 흐름 설계
           - MariaDB 스키마 설계 및 성능 이슈 분석/개선
           - Asterisk(ARI/WebSocket) 연동 기반 실시간 이벤트 처리 및 콜 제어 기능 구현 지원
           - 배포/모니터링/로그 기반 장애 분석 및 운영 이슈 대응
@@ -115,7 +115,7 @@ content:
     content:
       - layout: top-left
         title: 주요 내용
-        sub_title: Spring Boot / Thymeleaf / JavaScript / WebSocket / MariaDB
+        sub_title: Spring Boot / Thymeleaf / JavaScript
         caption: 2024.06 - Present
         quote: >
           CTI 시스템 개발 및 유지보수 업무 내 주요 경험
@@ -124,7 +124,7 @@ content:
 
           - 상담원 화면 기능 기획/개편: CTI 업무 흐름(통화상태 → 고객정보 → 이력작성 → 콜백/예약)을 탭/패널 중심으로 재구성하여 20여 개 화면을 약 8개 화면으로 통합(권한별 메뉴/노출 정책 포함)
           - 세션 유지형 응대 페이지(SPA 유사) 구현: Spring Boot + Thymeleaf 환경에서 콜 세션/통화 컨텍스트를 유지한 채 필요한 콘텐츠만 동적으로 교체(페이지 이동 최소화)
-          - CSS 토큰/변수 기반 스타일 체계화: 페이지별로 분산된 스타일을 공통 레이아웃/버튼 중심으로 통일하여 UI 일관성 강화 및 유지보수 비용 절감
+          - CSS 변수 기반 스타일 체계화: 페이지별로 분산된 스타일을 공통 레이아웃/버튼 중심으로 통일하여 UI 일관성 강화 및 유지보수 비용 절감
           - JavaScript 기반 운영 UI 구현: 조회/검색/필터/등록·수정/페이지네이션 등 UI 이벤트 처리와 API 연동, 카테고리 종속 선택(상/하위 연동), 예약/통계 차트, IVR 트리 시각화 구현
 
           <p class="center-text"><strong>실시간 이벤트 처리</strong></p>
@@ -182,25 +182,27 @@ content:
     layout: list
     content:
       - layout: top-left
-        title: CTI 웹 서비스 리빌드 (Next.js + AWS)
-        caption: 개인 프로젝트 (학습/운영 감각 유지)
-        additional_links:
-          - title: 배포주소 (admin/1234)
-            icon: fas fa-globe
-            url: https://main-build.dyzy398p1nd9g.amplifyapp.com/
-          - title: Repo
-            icon: fab fa-github
-            url: https://github.com/praymyk/React_PJ
+        title: CTI 웹 리빌드
+        caption: 개인 프로젝트 ( Next.js + AWS)
         description: |
-          현재 운영 중인 CTI 웹 서비스의 핵심 기능을 Next.js 기반 AWS 환경에서 재구성해 실제로 동작시키는 것을 목표로 진행 중입니다.
+          <p>
+            <a href="https://main-build.dyzy398p1nd9g.amplifyapp.com/" target="_blank">
+              🌐 <strong>배포주소</strong> (admin/1234)
+            </a><br>
+            <a href="https://github.com/praymyk/React_PJ" target="_blank">
+              💻 <strong>Repo</strong>
+            </a>
+          </p>
           
-          - 배포/운영: Amazon Amplify 기반 CI/CD 구성 (브랜치 전략에 따른 자동 배포)
-          - 기술 전환: Thymeleaf + jQuery/Ajax → Next.js + TypeScript로 재구현하며 구조 정리
-          - 장기 목표:
-            - 티켓 단위 이력 관리(DB 설계/기능 구현, Jira처럼 유연한 티켓 관리)
-            - 사용자 환경설정 기반 다크/라이트 테마 전환(전역 스타일 적용)
-            - 외부 AI(ChatGPT/Gemini) 업무 보조 기능 실험(이력 템플릿, 지식 정리 등)    
+          <p><em>개인 시간에 학습 목적으로 진행하며, 실서비스 환경에서 운영 하는 것을 목표로 꾸준히 개선하고 있습니다.</em></p>
           
+          - <strong>배포/운영:</strong> Amazon Amplify 기반 CI/CD 구성 (브랜치 전략에 따른 자동 배포)<br><br>
+          - <strong>기술 전환:</strong> Thymeleaf + jQuery/Ajax → Next.js + TypeScript로 재구현하며 구조 정리<br><br>
+          - <strong>장기 목표:</strong><br>
+            &nbsp;&nbsp;- 티켓 단위 이력 관리(DB 설계/기능 구현, Jira처럼 유연한 티켓 관리)<br>
+            &nbsp;&nbsp;- 사용자 환경설정 기반 다크/라이트 테마 전환(전역 스타일 적용)<br>
+            &nbsp;&nbsp;- 외부 AI(ChatGPT/Gemini) 업무 보조 기능 실험(이력 템플릿, 지식 정리 등)
+
 
   - title: Education
     layout: list
@@ -212,8 +214,10 @@ content:
         quote: >
           Java 기반 웹 개발 과정 수료 및 팀 프로젝트 수행
         description: |
-          Java/JDBC, JavaScript(jQuery/AJAX), Spring Framework 기반의 웹 개발 실습과 팀 프로젝트 참여
-          CRUD 중심의 서버-DB 연동 흐름을 학습, 개발 환경 설정 및 배포를 담당하며 협업을 위한 공통 템플릿/라이브러리 구성 경험
+          Java/JDBC, JavaScript(jQuery/AJAX), Spring Framework 기반의 웹 개발 실습과 팀 프로젝트 참여<br>
+          CRUD 중심의 서버-DB 연동 흐름을 학습, 개발 환경 설정 및 배포를 담당하며 협업을 위한 공통 템플릿/라이브러리 구성 경험<br>
+          팀 프로젝트에서 <strong>팀장</strong>으로 참여하여 <strong>개발환경 세팅</strong>, <strong>DB 설계</strong>, <strong>카카오페이 결제 API 연동</strong> 구현을 주도<br>
+          웹 개발 과정에서 <strong>우수 성적</strong>으로 <strong>수료/우수상</strong> 수상<br>
           코드 컨벤션/네이밍 합의와 문서화를 통해 팀 커뮤니케이션 비용을 줄이고 개발 효율 향상
 
 

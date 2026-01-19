@@ -179,29 +179,30 @@ content:
           
 
   - title: 포트폴리오
-    layout: list
-    content:
-      - layout: top-left
-        title: CTI 웹 리빌드
-        caption: 개인 프로젝트 ( Next.js + AWS)
-        description: |
-          <p>
-            <a href="https://main-build.dyzy398p1nd9g.amplifyapp.com/" target="_blank">
-              🌐 <strong>배포주소</strong> (admin/1234)
-            </a><br>
-            <a href="https://github.com/praymyk/React_PJ" target="_blank">
-              💻 <strong>Repo</strong>
-            </a>
-          </p>
-          
-          <p><em>개인 시간에 학습 목적으로 진행하며, 실서비스 환경에서 운영 하는 것을 목표로 꾸준히 개선하고 있습니다.</em></p>
-          
-          - <strong>배포/운영:</strong> Amazon Amplify 기반 CI/CD 구성 (브랜치 전략에 따른 자동 배포)<br><br>
-          - <strong>기술 전환:</strong> Thymeleaf + jQuery/Ajax → Next.js + TypeScript로 재구현하며 구조 정리<br><br>
-          - <strong>장기 목표:</strong><br>
-            &nbsp;&nbsp;- 티켓 단위 이력 관리(DB 설계/기능 구현, Jira처럼 유연한 티켓 관리)<br>
-            &nbsp;&nbsp;- 사용자 환경설정 기반 다크/라이트 테마 전환(전역 스타일 적용)<br>
-            &nbsp;&nbsp;- 외부 AI(ChatGPT/Gemini) 업무 보조 기능 실험(이력 템플릿, 지식 정리 등)
+      layout: list
+      content:
+        - layout: top-left
+          title: CTI 웹 리빌드
+          caption: 개인 프로젝트 ( Next.js + AWS)
+          description: |
+            <p>
+              <a href="https://main-build.dyzy398p1nd9g.amplifyapp.com/" target="_blank">
+                🌐 <strong>배포주소</strong> (admin/1234)
+              </a><br>
+              <a href="https://github.com/praymyk/React_PJ" target="_blank">
+                💻 <strong>Repo</strong>
+              </a>
+            </p>
+            
+            <p><em>개인 시간에 학습 목적으로 진행하며, 실서비스 환경에서 운영 하는 것을 목표로 꾸준히 개선하고 있습니다.</em></p>
+            
+            - <strong>배포/운영:</strong> Amazon Amplify 기반 CI/CD 구성 (브랜치 전략에 따른 자동 배포)<br><br>
+            - <strong>기술 전환:</strong> Thymeleaf + jQuery/Ajax → Next.js + TypeScript로 재구현하며 구조 정리<br><br>
+            - <strong>장기 목표 (Roadmap):</strong><br>
+              &nbsp;&nbsp;- <strong>아키텍처 분리:</strong> Frontend(Next.js)와 Backend(Spring Boot)를 분리하여 RESTful API 기반의 확장성 있는 구조로 고도화<br>
+              &nbsp;&nbsp;- <strong>티켓 관리 시스템:</strong> Jira와 유사한 티켓 단위 이력 관리 기능 구현 (DB 모델링 및 워크플로우 설계)<br>
+              &nbsp;&nbsp;- <strong>사용자 경험 개선:</strong> 전역 상태 관리를 통한 다크/라이트 테마 전환 기능 구현<br>
+              &nbsp;&nbsp;- <strong>AI 기능 도입:</strong> 외부 AI(ChatGPT/Gemini) API를 연동하여 업무 보조(이력 템플릿 자동 생성, 요약) 기능 실험
 
 
   - title: Education

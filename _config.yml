@@ -209,17 +209,26 @@ content:
     content:
       - layout: top-left
         title: KH정보교육원
-        sub_title: 웹 개발자 훈련 과정(Java/Spring/React)
+        sub_title: 웹 개발자 양성 과정 (Java/Spring/React)
         caption: 2023.07 - 2023.12
         quote: >
-          Java 기반 웹 개발 과정 수료 및 팀 프로젝트 수행
+          자바/스프링 개발자 양성 과정 수료
         description: |
-          Java/JDBC, JavaScript(jQuery/AJAX), Spring Framework 기반의 웹 개발 실습과 팀 프로젝트 참여<br>
-          CRUD 중심의 서버-DB 연동 흐름을 학습, 개발 환경 설정 및 배포를 담당하며 협업을 위한 공통 템플릿/라이브러리 구성 경험<br>
-          팀 프로젝트에서 <strong>팀장</strong>으로 참여하여 <strong>개발환경 세팅</strong>, <strong>DB 설계</strong>, <strong>카카오페이 결제 API 연동</strong> 구현을 주도<br>
-          웹 개발 과정에서 <strong>우수 성적</strong>으로 <strong>수료/우수상</strong> 수상<br>
-          코드 컨벤션/네이밍 합의와 문서화를 통해 팀 커뮤니케이션 비용을 줄이고 개발 효율 향상
-
+          <p class="center-text"><strong>팀 프로젝트 리딩 (Team Leader)</strong></p>
+          
+          - **개발 환경 표준화:** Git Branch 전략 수립 및 초기 프로젝트 구조(Boilerplate) 세팅으로 팀원 간 개발 충돌 최소화
+          - **DB 설계 및 구축:** 요구사항 분석을 통한 ERD 설계, 정규화 과정을 거쳐 데이터 무결성을 고려한 관계형 데이터베이스 구축
+          
+          <p class="center-text"><strong>핵심 기능 구현</strong></p>
+          
+          - **외부 API 연동:** 카카오페이 결제 프로세스 연동, 결제 검증 및 예외 처리 로직 구현으로 안정적인 결제 시스템 구축
+          - **Spring MVC 구조화:** Controller-Service-DAO 계층 분리 및 DTO 활용을 통해 유지보수가 용이한 모듈형 코드 작성
+          - **비동기 통신 구현:** jQuery/Ajax를 활용한 데이터 비동기 처리로 페이지 새로고침 없는 사용자 경험(UX) 제공
+          
+          <p class="center-text"><strong>성과 및 협업</strong></p>
+          
+          - **협업 프로세스 정립:** 코드 컨벤션 합의 및 공통 라이브러리/템플릿 구성을 주도하여 팀 개발 생산성 향상
+          - **과정 우수 수료:** 프로젝트 완성도와 성실한 학습 태도를 인정받아 성적 우수상 수상
 
 # Footer
 footer_show_references: true
